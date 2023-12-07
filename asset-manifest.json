@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/learn-lindo/static/css/main.7acaea2f.css",
+    "main.js": "/learn-lindo/static/js/main.07d3183d.js",
+    "index.html": "/learn-lindo/index.html",
+    "main.7acaea2f.css.map": "/learn-lindo/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/learn-lindo/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}

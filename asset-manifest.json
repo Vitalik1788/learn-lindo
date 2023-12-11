@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/learn-lindo/static/css/main.3832d3c8.css",
-    "main.js": "/learn-lindo/static/js/main.08e601e8.js",
+    "main.css": "/learn-lindo/static/css/main.fa3f1c6c.css",
+    "main.js": "/learn-lindo/static/js/main.2f313560.js",
     "static/media/hero-img.jpg": "/learn-lindo/static/media/hero-img.00a3dfa8d791a9eaf836.jpg",
     "index.html": "/learn-lindo/index.html",
-    "main.3832d3c8.css.map": "/learn-lindo/static/css/main.3832d3c8.css.map",
-    "main.08e601e8.js.map": "/learn-lindo/static/js/main.08e601e8.js.map"
+    "main.fa3f1c6c.css.map": "/learn-lindo/static/css/main.fa3f1c6c.css.map",
+    "main.2f313560.js.map": "/learn-lindo/static/js/main.2f313560.js.map"
   },
   "entrypoints": [
-    "static/css/main.3832d3c8.css",
-    "static/js/main.08e601e8.js"
+    "static/css/main.fa3f1c6c.css",
+    "static/js/main.2f313560.js"
   ]
 }

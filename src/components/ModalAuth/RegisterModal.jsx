@@ -1,9 +1,9 @@
 import Modal from 'react-modal';
-import css from './LogInModal.module.css';
+import css from './RegisterModal.module.css'
 import { MdClose } from 'react-icons/md';
+import { Field, Form, Formik } from 'formik';
 import { LuEyeOff } from 'react-icons/lu';
 import { IoEye } from 'react-icons/io5';
-import { Field, Form, Formik } from 'formik';
 import { useState } from 'react';
 
 const customStyles = {
@@ -19,33 +19,48 @@ const customStyles = {
   },
 };
 
-const LogInModal = ({ modalIsOpen, closeModal }) => {
-  const [passwordOpen, setPasswordOpen] = useState("text");
+const RegisterModal = ({ regModal, closeModalReg }) => {
+  const [passwordOpen, setPasswordOpen] = useState('text');
+
+
 
   return (
     <Modal
       ariaHideApp={false}
-      isOpen={modalIsOpen}
+      isOpen={regModal}
       // onAfterOpen={afterOpenModal}
-      onRequestClose={closeModal}
+      onRequestClose={closeModalReg}
       style={customStyles}
       contentLabel="Example Modal"
     >
       <div className={css.container}>
-        <h1 className={css.modalTitle}>Log In</h1>
+        <h1 className={css.modalTitle}>Registration</h1>
         <p className={css.modalText}>
-          Welcome back! Please enter your credentials to access your account and
-          continue your search for an teacher.
+          Thank you for your interest in our platform! In order to register, we
+          need some information. Please provide us with the following
+          information
         </p>
-        <MdClose className={css.cross} onClick={() => closeModal()} size={16} />
+        <MdClose
+          className={css.cross}
+          onClick={() => closeModalReg()}
+          size={16}
+        />
         <Formik
           initialValues={{
+            userName: '',
             email: '',
             password: '',
           }}
         >
           {({ values, errors, touched }) => (
             <Form className={css.formBox}>
+              <Field
+                className={css.inputStyle}
+                type="text"
+                name="userName"
+                value={values.userName}
+                placeholder="Name"
+              />
               <Field
                 className={css.inputStyle}
                 type="email"
@@ -73,9 +88,8 @@ const LogInModal = ({ modalIsOpen, closeModal }) => {
                   size={20}
                 />
               )}
-
               <button className={css.formBtn} type="submit">
-                Log In
+                Sign Up
               </button>
             </Form>
           )}
@@ -85,4 +99,4 @@ const LogInModal = ({ modalIsOpen, closeModal }) => {
   );
 };
 
-export default LogInModal;
+export default RegisterModal;

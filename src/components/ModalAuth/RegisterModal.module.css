@@ -52,11 +52,10 @@
 
 .eyeStyle {  
   position: absolute;
-  top: 62%;
+  top:68%;
   left: 80%;
   transform: translateY(-50%);
   cursor: pointer;
-  
 }
 
 .formBtn {
